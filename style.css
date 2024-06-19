@@ -1,0 +1,225 @@
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+img{
+    width: 30%;
+    border-radius: 10px;
+    margin: 25px;
+    display :flex;
+}
+
+.logofestival{
+    display: flex;
+    width: 313px;
+    margin: auto;
+}
+
+img.icone{ 
+    width: 30px;
+}
+
+body{
+background-color: #c1d3d0;
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 43px;
+}
+
+.imagedetête{
+   font-size: 150%;
+}
+
+nav ul {        /*menu bouton*/
+    display: flex;
+    padding: 0;
+    background-color: #2A2A2A;  
+    justify-content: center;
+
+}
+
+
+nav li {    /*enlever les points de la liste sur le menu*/
+    list-style: none;
+}
+
+nav a {     /*menu bouton*/
+    display: block;
+    min-width: 123px;
+    margin: 0.5rem;     /*marge externe*/
+    padding: 0.4rem;    /*marge interne*/
+    text-align: center;
+    background-color: #c1d3d0;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color:#606060;
+}
+
+div.imagedetête { /*image de tête*/
+   background-image: url(image/image\ de\ tête.jpg);
+   background-size: cover;
+   min-height: 350px;
+   color: #ffffff;
+   font-weight: bolder;
+   text-align: center;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   margin: -16px 0 20px 0;
+}
+
+
+nav.bouton {
+    display: block;
+    margin: 35px 500px;
+    border: 1px #2A2A2A solid;
+    box-shadow: 10px 5px 5px    /*ombre box*/   
+}
+
+nav.bouton:hover{
+    background-color:#ffffff;
+    color: #ffffff; 
+    margin: 35px 500px;
+    border: 1px #2A2A2A solid;
+}
+
+img.logocontact {   /*logo réseaux sociaux*/
+    width: 35px;
+}
+
+
+div.imagecontact{       /*image bannière */
+    background-image: url(image/bannierecontact.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+
+.contenuflex{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+
+.imageshistoire{            /*images alignées dans la page histoire*/
+     display: flex;
+     justify-content: space-between;
+     margin: 45px
+}
+
+ .imagefond{    
+    background-image: url(image/bannierecontact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 475px;
+}
+
+.contenubordure {       /*boîte*/
+    display: flex;
+    border: 1px #2A2A2A solid;
+    background-color: #ffffff;
+    margin: 0px 50px 52px;
+    padding: 9px;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.bordurecontact {       /*boîteformulaire*/
+    display: flex;
+    border: 1px #2A2A2A solid;
+    background-color: #ffffff;
+    margin: 52px 285px 52px;
+    padding: 9px;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.contacteznous{
+    padding: 30px;
+} 
+
+footer{    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #b1b1b1;
+    padding: 1%;
+    }
+@media screen and (max-width : 500px) {
+    nav ul{ 
+        flex-direction: column;
+    }
+    
+    .contenuflex{ display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 0px 0px -19px;
+    }
+    .contenuflex.reverse{
+        flex-direction: column-reverse;
+        
+        
+    }
+    div.imagedetête{
+        display:none
+    }
+    img {
+        width: 95%;
+        margin: 15px;
+    }
+    .contenubordure {
+        display: flex;
+        border: 1px #2A2A2A solid;
+        background-color: #ffffff;
+        margin: 13px 13px 13px;
+        padding: 9px;
+       
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #b1b1b1;
+        padding: 5%;
+        text-align: center;
+    }
+    .imagefond{
+    display: none;
+    }
+    nav.bouton {
+        display: block;
+        justify-content: center;
+        margin: 0px 33px 36px 19px;
+        border: 1px #2A2A2A solid;   
+    }
+    .bordurecontact{
+        margin: 17px 0px 17px;
+        
+    }
+    .imageshistoire{            /*images alignées dans la page histoire*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 12px 12px 12px -3px;
+    }
+    
+    .logofestival{
+    display: flex;
+    margin: 0px 0px 0px -49px;
+    }
+    
+}
+
+/*
+@media screen and (max-width : 700px) {
+    nav ul{ 
+        flex-direction: column;
+    }
+  
+}
+*/
