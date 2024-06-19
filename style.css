@@ -198,7 +198,7 @@ footer{
         border: 1px #2A2A2A solid;   
     }
     .bordurecontact{
-        margin: 17px 0px 17px;
+        margin: 17px -8px 17px;
         
     }
     .imageshistoire{            /*images alignées dans la page histoire*/
@@ -214,12 +214,3 @@ footer{
     }
     
 }
-
-/*
-@media screen and (max-width : 700px) {
-    nav ul{ 
-        flex-direction: column;
-    }
-  
-}
-*/
